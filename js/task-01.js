@@ -1,0 +1,1 @@
+const categoriesEl = document.querySelector('.item');
