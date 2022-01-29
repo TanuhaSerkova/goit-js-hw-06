@@ -21,4 +21,4 @@ const newIngredientsList = ingredients.map((ingredients) => {
 
 
 ingredientsEl.append(...newIngredientsList);
-console.log(newIngredientsList);
+console.log(ingredientsEl);
