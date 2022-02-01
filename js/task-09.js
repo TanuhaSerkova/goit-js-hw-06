@@ -15,4 +15,3 @@ function onButton(event) {
   bodyEl.style.BackgroundColor = `${getRandomHexColor()}`;
   spanRef.textContent = `${getRandomHexColor()}`;
 };
- 
