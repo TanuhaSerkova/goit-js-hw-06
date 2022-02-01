@@ -13,7 +13,6 @@ btnRef.addEventListener('click', onButton);
 
 function onButton(event) { 
   bodyEl.style.BackgroundColor = `${getRandomHexColor()}`;
-  //bodyEl = `${getRandomHexColor()}`;
   spanRef.textContent = `${getRandomHexColor()}`;
 };
  
