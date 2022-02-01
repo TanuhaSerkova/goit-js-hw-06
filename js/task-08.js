@@ -5,9 +5,6 @@
 //Выведи обьект с введенными данными в консоль и очисти значения полей формы методом reset.
 
 const formSub = document.querySelector('.login-form');
-//const formPass = document.querySelector("[name='password']")
-//const formEmail = document.querySelector("[name='email']")
-
 
 formSub.addEventListener('submit', onFormSub);
 
