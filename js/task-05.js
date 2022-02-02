@@ -1,11 +1,8 @@
-let inputRef = document.querySelector(`#name-input`);
-let outInput = document.querySelector(`#name-output`);
+const inputRef = document.querySelector("#name-input");
+const outInput = document.querySelector("#name-output");
+const h1El = document.querySelector("h1");
 
-inputRef.addEventListener(`input`, onInputChange);
+const onInputChange = event =>
+    inputRef.value === "" ? outInput.textContent = "Anonymous" : outInput.textContent = event.target.value;
 
-function onInputChange(event) { 
-    inputRef = event.currentTarget.value;
-    console.log(inputRef);
-
-    inputRef !== ` ` ? (outInput.innerText = inputRef.trim()) : `Anonymous`;
-};
+inputRef.addEventListener("input", onInputChange);
