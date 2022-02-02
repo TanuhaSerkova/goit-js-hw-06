@@ -17,6 +17,13 @@ function onFormSub(event) {
     if (email.value === '' || password.value === '') {
         alert('Все поля должны быть заполнены');
     }
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+
+    const formData = new FormData(event.currentTarget);
+formData.forEach((value, name) => {
+    console.log(`onFormSub -> name`, name);
+    console.log(`onFormSub -> value`, value);
+});
+
     event.currentTarget.reset();
 };
+
