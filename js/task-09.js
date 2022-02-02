@@ -12,6 +12,7 @@ function getRandomHexColor() {
 btnRef.addEventListener('click', onButton);
 
 function onButton(event) { 
-  bodyEl.style.BackgroundColor = `${getRandomHexColor()}`;
-  spanRef.textContent = `${getRandomHexColor()}`;
+  const color = `${getRandomHexColor()}`;
+  bodyEl.style.background = color;
+  spanRef.textContent = color;
 };
